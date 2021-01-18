@@ -1,0 +1,8 @@
+query params :
+$name = request('name');
+
+route params :
+Route::get('/pizzas/{id}', function ($id) {
+
+    return view('details',['id' => $id]);
+});
